@@ -51,7 +51,7 @@ static void guInit(void) {
 	
 	sceGuAlphaFunc(GU_GREATER, 0x7f, 0xff);
 	sceGuBlendFunc(GU_ADD, GU_SRC_ALPHA, GU_ONE_MINUS_SRC_ALPHA, 0, 0);
-	sceGuDepthFunc(GU_GEQUAL); // sceGuDepthFunc(GU_LEQUAL); // 
+	sceGuDepthFunc(GU_LEQUAL); // sceGuDepthFunc(GU_GEQUAL);
 	sceGuClearDepth(65535); // sceGuClearDepth(0);
 	sceGuDepthRange(0, 65535); // sceGuDepthRange(65535, 0);
 	
